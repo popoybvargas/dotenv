@@ -1,11 +1,19 @@
 {
   "name": "zv-getconfig",
-  "version": "1.0.0",
-  "description": "Get configuration values",
+  "version": "1.0.1",
+  "description": "Get configuration file and load values.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popoybvargas/node_getconfig.git"
+  },
   "author": "Popoy Vargas",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/popoybvargas/node_getconfig/issues"
+  },
+  "homepage": "https://github.com/popoybvargas/node_getconfig#readme"
 }

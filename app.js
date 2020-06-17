@@ -6,11 +6,14 @@ module.exports = ( customPath = null ) =>
 
 	if ( ! path )
 	{
-		if ( ! fs.existsSync( `${__dirname}/.env` ) )
+		// if ( ! fs.existsSync( `${__dirname}/.env` ) )
+		if ( ! fs.existsSync( '.env' ) )
 		{
-			fs.writeFileSync( `${__dirname}/.env`, '', err => console.log( 'File created.' ) );
+			// fs.writeFileSync( `${__dirname}/.env`, '', err => console.log( 'File created.' ) );
+			fs.writeFileSync( '.env', '', err => console.log( 'File created.' ) );
 		}
-		path = `${__dirname}/.env`;
+		// path = `${__dirname}/.env`;
+		path = '.env';
 	}
 	const configurations = fs.readFileSync( path, 'utf-8' );
 	let configurationsArray = [];

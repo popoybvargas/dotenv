@@ -1,6 +1,6 @@
 {
   "name": "zv-getconfig",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get configuration file and load values.",
   "main": "app.js",
   "scripts": {

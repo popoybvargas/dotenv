@@ -6,13 +6,11 @@ module.exports = ( customPath = null ) =>
 
 	if ( ! path )
 	{
-		// if ( ! fs.existsSync( `${__dirname}/.env` ) )
 		if ( ! fs.existsSync( '.env' ) )
 		{
-			// fs.writeFileSync( `${__dirname}/.env`, '', err => console.log( 'File created.' ) );
 			fs.writeFileSync( '.env', '', err => console.log( 'File created.' ) );
+			return console.log( 'Configuratons not available! Please provide them in the .env file.' );
 		}
-		// path = `${__dirname}/.env`;
 		path = '.env';
 	}
 	const configurations = fs.readFileSync( path, 'utf-8' );
@@ -29,6 +27,10 @@ module.exports = ( customPath = null ) =>
 
 			if ( key ) { configurationsObject[ key ] = value; }
 		});
+	}
+	else
+	{
+		console.log( 'No available configuraton! Please provide them in the .env file.' );
 	}
 
 	return configurationsObject;

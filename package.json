@@ -1,7 +1,7 @@
 {
-  "name": "zv-getconfig",
-  "version": "2.0.0",
-  "description": "Get configuration file and load values.",
+  "name": "load.env",
+  "version": "2.0.1",
+  "description": "Get configuration file and load as environment variables.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

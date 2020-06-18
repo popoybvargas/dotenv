@@ -5,8 +5,8 @@ Get configuration file and load as environment variables.
 ```
 require( 'zv-load.env' )();
 ```
-The above code loads configurations specified in the ***.env*** file in the project's root directory.
-> Use the above code as soon as possible (topmost part) in the application's *main* script.
+The above code loads configurations specified in the ***.env*** file in the application's root directory.
+> Use the above code as soon as possible (topmost part) in the *main* (e.g. index.js or app.js) script.
 
 To load configurations from a custom file, specify its path as an argument, e.g.
 ```

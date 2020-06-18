@@ -1,20 +1,23 @@
 const fs = require( 'fs' );
+const path = require( 'path' );
 
 module.exports = ( customPath = null ) =>
 {
-	let path = customPath;
+	let envPath = customPath;
 
-	if ( ! path )
+	if ( ! envPath )
 	{
-		if ( ! fs.existsSync( '.env' ) )
+		global.appRoot = path.resolve( __dirname );
+		envPath = `${global.appRoot}/.env`;
+
+		if ( ! fs.existsSync( envPath ) )
 		{
-			fs.writeFileSync( '.env', '', err => console.log( '.env file created.' ) );
+			fs.writeFileSync( envPath, '', err => console.log( '.env file created.' ) );
 
 			return console.log( 'Configuratons not available! Please specify them in the .env file.' );
 		}
-		path = '.env';
 	}
-	const configurations = fs.readFileSync( path, 'utf-8' );
+	const configurations = fs.readFileSync( envPath, 'utf-8' );
 	let configurationsArray = [];
 
 	if ( configurations )

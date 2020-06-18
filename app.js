@@ -7,9 +7,9 @@ module.exports = ( customPath = null ) =>
 
 	if ( ! envPath )
 	{
-		global.appRoot = path.resolve( __dirname );
+		global.appRoot = path.resolve( `${__dirname}/../../` );
 		envPath = `${global.appRoot}/.env`;
-
+		
 		if ( ! fs.existsSync( envPath ) )
 		{
 			fs.writeFileSync( envPath, '', err => console.log( '.env file created.' ) );

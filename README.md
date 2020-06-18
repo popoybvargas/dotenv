@@ -1,5 +1,5 @@
-# load.env
-Get configuration file and load values.
+# zv-load.env
+Get configuration file and load as environment variables.
 
 #### Basic Usage
 ```

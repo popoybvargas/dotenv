@@ -1,19 +1,19 @@
 {
-  "name": "zv-getconfig",
-  "version": "2.0.0",
-  "description": "Get configuration file and load values.",
+  "name": "load.env",
+  "version": "2.0.1",
+  "description": "Get configuration file and load as environment variables.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/popoybvargas/node_getconfig.git"
+    "url": "git+https://github.com/popoybvargas/node_load.env.git"
   },
   "author": "Popoy Vargas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/popoybvargas/node_getconfig/issues"
+    "url": "https://github.com/popoybvargas/node_load.env/issues"
   },
-  "homepage": "https://github.com/popoybvargas/node_getconfig#readme"
+  "homepage": "https://github.com/popoybvargas/node_load.env#readme"
 }

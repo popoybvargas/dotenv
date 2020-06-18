@@ -1,5 +1,5 @@
 {
-  "name": "load.env",
+  "name": "zv-load.env",
   "version": "2.0.1",
   "description": "Get configuration file and load as environment variables.",
   "main": "app.js",

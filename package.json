@@ -1,7 +1,7 @@
 {
   "name": "zv-load.env",
-  "version": "2.0.4",
-  "description": "Get configuration file and load as environment variables.",
+  "version": "2.0.5",
+  "description": "Get configuration file and load entries as environment variables.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/popoybvargas/node_load.env.git"
   },
+  "keywords": [
+    "configuration",
+    "config",
+    "environment"
+  ],
   "author": "Popoy Vargas",
   "license": "ISC",
   "bugs": {

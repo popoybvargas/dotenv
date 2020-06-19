@@ -1,9 +1,20 @@
 const fs = require( 'fs' );
 const path = require( 'path' );
 
-module.exports = ( customPath = null ) =>
+module.exports = ( customPath ) =>
 {
-	let envPath = customPath;
+	let envPath;
+
+	if ( customPath )
+	{
+		if ( ! fs.existsSync( customPath ) )
+		{
+			console.log( `ERROR 💥 ${customPath} does not exist!` );
+
+			process.exit( 1 );
+		}
+		envPath = customPath;
+	}
 
 	if ( ! envPath )
 	{
@@ -13,7 +24,7 @@ module.exports = ( customPath = null ) =>
 		if ( ! fs.existsSync( envPath ) )
 		{
 			fs.writeFileSync( envPath, '', err => console.log( '.env file created.' ) );
-
+			
 			return console.log( 'Configuratons not available! Please specify them in the .env file.' );
 		}
 	}

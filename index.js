@@ -25,8 +25,13 @@ module.exports = customEnvFilePath =>
 
 		configurationsArray.forEach(config =>
 		{
-			const [key, value] = config.split('=');
-			process.env[key] = value;
+			const indexOfEqual = config.indexOf('=');
+			
+			if (indexOfEqual >= 0)
+			{
+				const key = config.substring(0, indexOfEqual);
+				process.env[key] = config.substring(indexOfEqual + 1);
+			}
 		});
 	}
 	else console.error(`No available configuraton in ${envFilePath}!`);

@@ -1,14 +1,14 @@
 {
-  "name": "zv-load.env",
-  "version": "2.0.6",
+  "name": "zv-dotenv",
+  "version": "1.0.0",
   "description": "Get configuration file and load entries as environment variables.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/popoybvargas/node_load.env.git"
+    "url": "git+https://github.com/popoybvargas/dotenv.git"
   },
   "keywords": [
     "configuration",
@@ -18,7 +18,7 @@
   "author": "Popoy Vargas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/popoybvargas/node_load.env/issues"
+    "url": "https://github.com/popoybvargas/dotenv/issues"
   },
-  "homepage": "https://github.com/popoybvargas/node_load.env#readme"
+  "homepage": "https://github.com/popoybvargas/dotenv#readme"
 }

@@ -34,5 +34,4 @@ module.exports = customEnvFilePath =>
 			}
 		}
 	}
-	else console.error(`No available configuraton in ${envFilePath}!`);
 };
